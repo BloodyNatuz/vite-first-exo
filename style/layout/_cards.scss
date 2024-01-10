@@ -1,0 +1,25 @@
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+} 
+
+.lmain, .cmain, .rmain{
+    width: 32%;
+}
+
+@media (max-width: 900px) {
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    } 
+
+    .lmain, .cmain, .rmain{
+        width: 100%;
+    }
+} 
