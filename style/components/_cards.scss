@@ -1,0 +1,45 @@
+.cardcyan, .cardred, .cardorange, .cardblue{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 5px;
+    padding: 2em;
+    height: max-content;
+    margin: 2em 1em;
+}
+
+.cardcyan{
+    border-top: 5px solid $primary-cyan;
+}
+.cardcyan .textcyan{
+    width: 75%;
+}
+
+.cardred{
+    border-top: 5px solid $primary-red;
+}
+.cardred .textred{
+    width: 75%;
+}
+@media (max-width: 900px) {
+    .cardred{
+        margin-bottom: 4em;
+    }
+} 
+
+.cardorange{
+    border-top: 5px solid $primary-orange;
+}
+.cardorange .textorange{
+    width: 75%;
+}
+
+.cardblue{
+    border-top: 5px solid $primary-blue;
+}
+.cardblue .textblue{
+    width: 75%;
+}
+
+.bottomcard{
+    display: flex;
+    justify-content: end;
+}
