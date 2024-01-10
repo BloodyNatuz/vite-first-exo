@@ -1,0 +1,19 @@
+// Imports
+@import '../base/colors';
+@import '../base/typo';
+
+@import '../belements/imgs';
+@import '../belements/links';
+@import '../belements/texts';
+@import '../belements/titles';
+
+@import '../components/buttons';
+@import '../components/cards';
+
+@import '../layout/footer';
+@import '../layout/navbar';
+
+body {
+    margin: 0;
+    padding: 0;
+}
