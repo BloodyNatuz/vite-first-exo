@@ -49,39 +49,68 @@ cmain.appendChild(cardorange); // Attribution à la div centrale
 const cardblue = document.createElement("div");
 cardblue.className = "cardblue";
 rmain.appendChild(cardblue); // Attribution à la div droite
+//Création d'une div en bas des cards
+const bottomcardcyan = document.createElement("div");
+bottomcardcyan.className = "bottomcard";
+const bottomcardred = document.createElement("div");
+bottomcardred.className = "bottomcard";
+const bottomcardorange = document.createElement("div");
+bottomcardorange.className = "bottomcard";
+const bottomcardblue = document.createElement("div");
+bottomcardblue.className = "bottomcard";
 
 // Création des titres de card
-const titlecyan = document.createElement("div");
+const titlecyan = document.createElement("h2");
 titlecyan.className = "titlecyan";
 titlecyan.textContent = "Supervisor";
 cardcyan.appendChild(titlecyan); // Attribution à la card cyan
-const titlered = document.createElement("div");
+const titlered = document.createElement("h2");
 titlered.className = "titlered";
 titlered.textContent = "Team Builder";
 cardred.appendChild(titlered); // Attribution à la card rouge
-const titleorange = document.createElement("div");
+const titleorange = document.createElement("h2");
 titleorange.className = "titleorange";
 titleorange.textContent = "Karma";
 cardorange.appendChild(titleorange); // Attribution à la card orange
-const titleblue = document.createElement("div");
+const titleblue = document.createElement("h2");
 titleblue.className = "titleblue";
 titleblue.textContent = "Calculator";
 cardblue.appendChild(titleblue); // Attribution à la card bleue
 
 // Création des textes de card
-const textcyan = document.createElement("div");
+const textcyan = document.createElement("p");
 textcyan.className = "textcyan";
-textcyan.textContent = "Supervisor";
+textcyan.textContent = "Monitors activity to identify project roadblocks";
 cardcyan.appendChild(textcyan); // Attribution à la card cyan
-const textred = document.createElement("div");
+const textred = document.createElement("p");
 textred.className = "textred";
-textred.textContent = "Team Builder";
+textred.textContent = "Scans our talent network to create the optimal team for your project";
 cardred.appendChild(textred); // Attribution à la card rouge
-const textorange = document.createElement("div");
+const textorange = document.createElement("p");
 textorange.className = "textorange";
-textorange.textContent = "Karma";
+textorange.textContent = "Regularly evaluates our talent to ensure quality";
 cardorange.appendChild(textorange); // Attribution à la card orange
-const textblue = document.createElement("div");
+const textblue = document.createElement("p");
 textblue.className = "textblue";
-textblue.textContent = "Calculator";
+textblue.textContent = "Uses data from past projects to provide better delivery estimates";
 cardblue.appendChild(textblue); // Attribution à la card bleue
+
+// Attributions des bottomcards aux cards
+cardcyan.appendChild(bottomcardcyan);
+cardred.appendChild(bottomcardred);
+cardorange.appendChild(bottomcardorange);
+cardblue.appendChild(bottomcardblue);
+
+// Création des images de card
+const imgcyan = document.createElement("img");
+imgcyan.src = "../img/icon-supervisor.svg";
+bottomcardcyan.appendChild(imgcyan);
+const imgred = document.createElement("img");
+imgred.src = "../img/icon-team-builder.svg";
+bottomcardred.appendChild(imgred);
+const imgorange = document.createElement("img");
+imgorange.src = "../img/icon-karma.svg";
+bottomcardorange.appendChild(imgorange);
+const imgblue = document.createElement("img");
+imgblue.src = "../img/icon-calculator.svg";
+bottomcardblue.appendChild(imgblue);
