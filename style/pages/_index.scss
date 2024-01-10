@@ -16,4 +16,13 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: $secondary-light-gray;
+  font-family: $primary-font;
+  font-weight: $medium-font;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

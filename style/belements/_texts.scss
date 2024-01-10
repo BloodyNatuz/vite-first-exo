@@ -1,3 +1,15 @@
 p {
-  color: $primary-color;
+  color: $secondary-gray-blue;
+  font-size: 15px;
+}
+
+.baseline {
+  text-align: center;
+  width: 28%;
+}
+
+@media (max-width: 1100px) {
+  .baseline {
+    width: 60%;
+  }
 }
